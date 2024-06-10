@@ -1,0 +1,20 @@
+.pulser {
+    width: 50px;
+    height: 150px;
+    background-color: #5dc35f;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+@keyframes pulse {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    42% { opacity: 0; }
+    55% { opacity: 1; }
+    80% { opacity: 1; }
+    92% { opacity: 0; }
+    100% { opacity: 0; }
+}
