@@ -24,7 +24,7 @@ then
 
     # commit changes
     git add --all
-    git commit -m "Deploy new build"
+    git commit -m "${@-Deploy new version}"
     git push origin main
 else
     printf "$RED""Error: "$RESET"no "$IMPORTANT"./dist"$RESET" folder found. Please read the note in "$IMPORTANT"deploy.sh"$RESET" before deploying again."$RESET"\n"
