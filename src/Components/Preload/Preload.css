@@ -1,0 +1,21 @@
+.brand {
+    animation-name: preload-bounce;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: inherit;
+    transform: scale(1);
+}
+
+@keyframes preload-bounce {
+    from {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.95);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,19 @@
+.sub-ripple {
+    animation: preload-ripple 3s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0.3;
+    z-index: -1;
+    transform: scale(0.9);
+}
+
+@keyframes preload-ripple {
+    from {
+        opacity: 0.3;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
