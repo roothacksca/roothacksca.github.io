@@ -1,29 +1,34 @@
 import { MDBContainer } from "mdb-react-ui-kit";
-import { useEffect, useState } from "react";
 
-import Preload, { Postload } from "./Components/Preload/Preload";
 import Preregistration from "./Components/Preregistration";
+import BACKGROUND from "../assets/images/background.png";
 
 // TODO: implement react router for page loading
 
 import "./App.css";
 
 function App() {
-    const [ pageLoaded, setPageLoaded ] = useState<boolean>(false);
+    // const [ pageLoaded, setPageLoaded ] = useState<boolean>(false);
 
-    useEffect(() => {
-        // load stuff
+    // useEffect(() => {
+    //     // load stuff
 
-        setTimeout(() => setPageLoaded(true), 0 * 2500);
+    //     setTimeout(() => setPageLoaded(true), 0 * 2500);
 
-    });
+    // });
 
-    return <MDBContainer fluid>
-        <Preload enabled={!pageLoaded} rippleInterval={1.5}/>
+    return <MDBContainer className="full-background h-100" fluid
+        style={{
+            backgroundImage: `url(${BACKGROUND})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+        }}>
+        {/* <Preload enabled={!pageLoaded} rippleInterval={1.5}/>
 
         <Postload pageLoaded={pageLoaded} time={0.5}>
-            <Preregistration/>
-        </Postload>
+        </Postload> */}
+
+        <Preregistration/>
     </MDBContainer>;
 }
 

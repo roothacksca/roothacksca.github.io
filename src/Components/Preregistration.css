@@ -1,0 +1,55 @@
+section.preregistration {
+    width: 60%;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+section.preregistration button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.responsive-form-header {
+    flex-direction: row;
+}
+
+.form-element {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.form-element .form-check {
+    width: 90vw;
+    max-width: 24em;
+}
+
+.form-element .form-control {
+    background: #ffffff8c !important;
+    border: 0px solid transparent;
+}
+
+.form-element .form-notch > div:not(input:focus~div) {
+    border-color: rgb(0, 143, 15)!important;
+}
+
+@media screen and (max-width: 930px) {
+    section.preregistration {
+        padding-top: 150px;
+    }
+
+    .responsive-form-header {
+        flex-direction: column;
+    }
+
+    .form-element {
+        align-items: center;
+    }
+
+    .form-element .form-outline {
+        max-width: 390px;
+        width: 80vw;
+    }
+}

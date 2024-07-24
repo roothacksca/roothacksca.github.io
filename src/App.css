@@ -1,1 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Bai Jamjuree", sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.big-font {
+    font-family: "Montserrat", sans-serif !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.3rem;
+}
+
+#react-mount {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 930px) {
+    .big-font {
+        font-size: 3rem;
+    }
+}
