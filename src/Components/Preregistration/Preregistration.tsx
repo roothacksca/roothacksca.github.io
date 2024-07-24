@@ -1,5 +1,5 @@
 import { MDBBtn, MDBCheckbox, MDBInput } from "mdb-react-ui-kit";
-import BRAND_TRANSPARENT from "../../assets/images/brand-transparent.png";
+import BRAND_TRANSPARENT from "../../../assets/images/brand-transparent.png";
 
 import "./Preregistration.css";
 

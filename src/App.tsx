@@ -1,6 +1,6 @@
 import { MDBContainer } from "mdb-react-ui-kit";
 
-import Preregistration from "./Components/Preregistration";
+import Preregistration from "./Components/Preregistration/Preregistration";
 import BACKGROUND from "../assets/images/background.png";
 
 // TODO: implement react router for page loading
