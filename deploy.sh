@@ -18,13 +18,15 @@ IMPORTANT="\033[4m\033[34m\033[0m"
 
 if [ -d "dist" ]
 then
+    commitmsg="${@-Deploy new version}"
+    
     # cp local build
     cp -r ./dist/* .
     rm -rf dist
 
     # commit changes
     git add --all
-    git commit -m "${@-Deploy new version}"
+    git commit -m "$commitmsg"
     git push origin main
 else
     printf "$RED""Error: "$RESET"no "$IMPORTANT"./dist"$RESET" folder found. Please read the note in "$IMPORTANT"deploy.sh"$RESET" before deploying again."$RESET"\n"
