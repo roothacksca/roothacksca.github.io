@@ -17,11 +17,14 @@ function App() {
 
     // });
 
-    return <MDBContainer className="full-background h-100" fluid
+    return <MDBContainer className="full-background" fluid
         style={{
             backgroundImage: `url(${BACKGROUND})`,
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
+            display: "flex",
+            minHeight: "100vh",
+            height: "fit-content"
         }}>
         {/* <Preload enabled={!pageLoaded} rippleInterval={1.5}/>
 

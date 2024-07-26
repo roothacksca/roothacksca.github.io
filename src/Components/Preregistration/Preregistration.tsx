@@ -64,7 +64,7 @@ const sendForm: FormEventHandler = (event) => {
             }
         }
     
-        fetch(`http://${FORM_SERVER}/preregistration`, {
+        fetch(`https://${FORM_SERVER}/preregistration`, {
             "method": "POST",
             "body": JSON.stringify(data),
             "headers": {
@@ -78,7 +78,7 @@ const sendForm: FormEventHandler = (event) => {
 
 export default function() {
     return <section id="preregistration-container" className="preregistration m-auto w-100 d-flex w-60 flex-column text-center">
-        <header className="d-flex align-items-center mb-3 responsive-form-header">
+        <header className="d-flex align-items-center mt-4 mb-3 responsive-form-header">
             <img style={{ transform: "scale(1.2)", width: 150, height: 150 }} src={BRAND_TRANSPARENT}/>
             <div className="flex-grow-1 text-center" style={{ width: "100%", color: "rgb(21, 34, 48)" }}>
                 <span style={{ fontWeight: 700, textTransform: "uppercase", fontSize: "1.5em" }}>Pre-registration open now!</span>
