@@ -120,7 +120,7 @@ export default function() {
                 />
             </MDBValidationItem>
 
-            <MDBCheckbox id="newsletter-agreement" size={30} label="Keep me updated on the Roothacks newsletter!"/>
+            <MDBCheckbox checked id="newsletter-agreement" size={30} label="Keep me updated on the Roothacks newsletter!"/>
             
             <MDBBtn id="register" type="submit">Register</MDBBtn>
         </MDBValidation>
