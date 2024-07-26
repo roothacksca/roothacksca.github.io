@@ -14,8 +14,8 @@ function mdbInputEvFlagger(method: "add" | "remove"): FocusEventHandler {
 }
 
 const DEV_SERVER = false;
-const FORM_SERVER = DEV_SERVER ? "127.0.0.1:3000"
-                                : "44.198.227.56";
+const FORM_SERVER = DEV_SERVER ? "http://127.0.0.1:3000"
+                                : "https://fs1.roothacksformserver.ca";
 
 const sendForm: FormEventHandler = (event) => {
     const form = event.target as HTMLFormElement;
@@ -64,7 +64,7 @@ const sendForm: FormEventHandler = (event) => {
             }
         }
     
-        fetch(`https://${FORM_SERVER}/preregistration`, {
+        fetch(`${FORM_SERVER}/preregistration`, {
             "method": "POST",
             "body": JSON.stringify(data),
             "headers": {
